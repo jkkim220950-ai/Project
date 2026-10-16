@@ -151,9 +151,9 @@ tr:nth-child(even) {
   Border-collapse: 20px;
 }
 
-  td {
-  border: 1px solid black;
- Border-collapse: 20px;
+  td, th{
+  border: 1px solid rgb(245, 236, 236);
+ Border-collapse: co;
  padding: 12px;
 }
 
@@ -180,5 +180,9 @@ flex-direction: column
   flex-direction: row;
   justify-content: center;
   gap: 50px;
-  border-collapse: 20px;
+  border-collapse:collapse
+}
+table{
+  border: 2px white solid;
+  border-collapse:collapse;
 }
