@@ -51,6 +51,7 @@ padding: 12px; border: none;
 border-radius: 6px; font-size: 16px; font-weight: bold; cursor: pointer; margin-top: 10px;
 transition: background-color 0.2s ease;
 }
+
 submit-btn:hover
 {
 background-color:#1d4ed8;
@@ -63,6 +64,7 @@ background-color:
 color: #1e293b; padding: 40px 20px;
 display: flex;
 flex-direction: column; align-items: center;
+
 }
 
 .option-group { display: flex;
@@ -72,6 +74,7 @@ gap: 10px; margin-top: 4px;
 
 .form-card {
 transition: transform 0.3s ease, box-shadow 0.3s ease;
+border-collapse: 12px;
 }
 .form-card:hover {
 transform: translateY(-8px);
@@ -96,7 +99,6 @@ flex-wrap:wrap;
    box-shadow: 0 12px 30px rgba(43, 165, 217, 0.2);
 border: 2px solid #0764e6; 
 flex-direction: column
-
 }
 
 
@@ -121,7 +123,9 @@ font-family: inherit; resize: vertical;
  
 
 }
-
+table{
+  Border-collapse: 5px;
+}
 
 input[type="text"]:focus, 
 input[type="email"]:focus, 
@@ -143,16 +147,14 @@ submit-btn:hover
 {
 background-color:#1d4ed8;
 }
-
-
-td {
-    padding: 12px;
-    
-  }
+tr:nth-child(even) {
+  Border-collapse: 20px;
+}
 
   td {
   border: 1px solid black;
-
+ Border-collapse: 20px;
+ padding: 12px;
 }
 
 body {
@@ -163,7 +165,6 @@ body {
   margin: 0;
   padding: 20px;
 flex-direction: column
-
 }
 
 .profile-header {
@@ -172,4 +173,12 @@ flex-direction: column
 }
 .avater {
   border-radius: 50%;
+}
+
+.main{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+  border-collapse: 20px;
 }
